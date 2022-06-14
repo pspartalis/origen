@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 style="color:#653398;">👉🏻 Πρόσφατες Ευκαιρίες 👈🏻</h2>
+
+<ul class="opportunities">
+{% for opportunity in opportunities %}
+<li>
+    <div class="metadata">{{ opportunity.type }} / {{ opportunity.category }}</div>
+    <div class="title">{{ opportunity.title }}</div>
+    <div class="image"><img src="{{ opportunity.image.url }}"></div>
+    <div class="cta"><a href="{{ opportunity.cta_link }}" target="_blank">Άρπαξε την ευκαιρία!</a></div>
+</li>
+{% endfor %}
+</ul>
+
+{% endblock  %}

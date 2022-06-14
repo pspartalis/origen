@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Origen | Ανακάλυψε δωρεάν ευκαιρίες προσωπικής ανάπτυξης</title>
+    <meta name="title" content="Origen | Ανακάλυψε δωρεάν ευκαιρίες προσωπικής ανάπτυξης">
+    <meta name="description" content="Workshops, webinars, σεμινάρια, trainings και ό,τι άλλο μπορεί να βοηθήσει στην προσωπική σου ανάπτυξη, θα το βρίσκεις εδώ! Κάθε μήνα, ανακάλυψε δωρεάν ευκαιρίες προσωπικής ανάπτυξης.">
+
+    <link rel="icon" href="https://pspartalis.gr/wp-content/uploads/2020/12/favicon-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://pspartalis.gr/wp-content/uploads/2020/12/favicon-300x300.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://pspartalis.gr/wp-content/uploads/2020/12/favicon-300x300.png">
+    <meta name="msapplication-TileImage" content="https://pspartalis.gr/wp-content/uploads/2020/12/favicon-300x300.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://o314.gr/css/icon-font/lineicons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{% static 'logo_purple.png' %}" alt="Origen Greece">
+            </div>
+            <div class="description">Ανακάλυψε δωρεάν ευκαιρίες προσωπικής ανάπτυξης 🤯</div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="wrapper">
+            <p class="description">📥 Κάθε μήνα,<br>οι καλύτερες ευκαιρίες στο email σου!</p>
+            <p><form action="https://origen.us19.list-manage.com/subscribe/post?u=dfe5876f4279e93989a2246cd&amp;id=8774f89472" method="post" id="mc-embedded-subscribe-form" target="_blank"><input type="email" name="EMAIL" placeholder="Γράψε το email σου εδώ!" id="mce-EMAIL"><br><input type="submit" value="Ναι! Ας συνεχίσουμε" name="subscribe" id="mc-embedded-subscribe" class="button"></form></p>
+        </div>
+    </div>
+    
+    <main><div class="wrapper">{% block content %}{% endblock %}</div></main>
+    
+    <footer>
+        <div class="wrapper">
+            <p class="logo"><img src="{% static 'logo_purple.png' %}" alt="Origen Greece"></p>
+            <p>Origen Greece, &copy; {% now "Y" %}</p>
+            <p>Made with ❤️ in Thessaloniki. Curated by <a href="https://pspartalis.gr" target="_blank">Padelis Spartalis</a>.</p> 
+        </div> 
+    </footer>
+</body>
+</html>
